@@ -45,16 +45,16 @@ body{
    width: 50%;
 }
 img{
-    width: 27rem;
-    height: 25rem;
+    width: 25rem;
+    height: 29rem;
 }
+    
 
 .article{
     display: flex;
     flex-flow: column;
     text-align: left;
     padding: 2rem 3rem 2rem 2rem;
-   
     margin: 1rem;
 }
 
