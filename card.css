@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    --darkSaturatedBlue: hsl(244, 38%, 16%);
+    --softViolet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --statWhite: hsla(0, 0%, 100%, 0.6);
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--veryDarkBlue);
+    font-family:  'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: flex;
+    width: 60%;
+    height: 50vh;
+    margin: 10rem 15rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: .7rem;
+    overflow: hidden;
+    background-color: var(--darkSaturatedBlue);
+    color: #fff;
+    border: 1px solid whitesmoke;
+}
+
+.wrapper > *{
+   width: 50%;
+}
+img{
+    width: 27rem;
+    height: 25rem;
+}
+
+.article{
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    padding: 2rem 3rem 2rem 2rem;
+   
+    margin: 1rem;
+}
+
+.article > *{
+    margin: 2rem;
+}
+
+.article h1{
+    margin-bottom: 1rem;
+}
+
+.article span{
+    color: var(--softViolet);
+}
+
+.article p{
+    color: var(--slightlyTransparentWhite);
+    font-size: 75%;
+    line-height: 1.3rem;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.stats h1{
+    padding: 0;
+    margin: 0;
+}
+
+.img-header{
+    width: fit-content;
+}
+
+.attribution{
+   
+   font-size: 11px; text-align: center;
+   color: var(--softViolet)
+  
+}
+
+.attribution a{
+    color: var(--slightlyTransparentWhite);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+@media all and (max-width: 1440px){
+    img{
+        
+        width: fit-content;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+        margin-right: 3rem;
+        height: fit-content;
+        align-items: center;
+        width: 60vh;
+    }
+    
+    .article{
+        margin: 0;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .article p{
+        line-height: 2rem;
+    }
+    .stats{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+        margin-top: 0;
+        text-align: center;
+    }
+    .stats > *{
+        margin:2rem 0;
+        
+    }
+    
+    
+}
+
